@@ -1,1 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InventoryHub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>InventoryHub</h1>
 
+    <div class="auth">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <input type="text" id="loginUsername" placeholder="Username" required />
+        <input type="password" id="loginPassword" placeholder="Password" required />
+        <button type="submit">Login</button>
+      </form>
+
+      <h2>Signup</h2>
+      <form id="signupForm">
+        <input type="text" id="signupUsername" placeholder="Username" required />
+        <input type="password" id="signupPassword" placeholder="Password" required />
+        <select id="signupRole">
+          <option value="user">User</option>
+          <option value="admin">Admin</option>
+        </select>
+        <button type="submit">Signup</button>
+      </form>
+    </div>
+
+    <div id="dashboard" style="display:none;">
+      <h2>Inventory</h2>
+      <ul id="inventoryList"></ul>
+
+      <div id="adminPanel" style="display:none;">
+        <h3>Add Item</h3>
+        <form id="addItemForm">
+          <input type="text" id="itemName" placeholder="Item Name" required />
+          <input type="number" id="itemQty" placeholder="Quantity" required />
+          <input type="number" id="itemPrice" placeholder="Price" required />
+          <button type="submit">Add Item</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+  </html>
+  
