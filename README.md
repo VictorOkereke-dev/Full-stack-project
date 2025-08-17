@@ -4,7 +4,7 @@
 Here’s a modular structure that separates concerns and makes the codebase easier to navigate:
 
     Code
-InventoryHub/
+    InventoryHub/
 ├── client/                      # Frontend code
 │   ├── index.html
 │   ├── style.css
