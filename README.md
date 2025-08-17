@@ -3,7 +3,7 @@
 # Structure for InventoryHub
 Here’s a modular structure that separates concerns and makes the codebase easier to navigate:
 
-Code
+    Code
 InventoryHub/
 ├── client/                      # Frontend code
 │   ├── index.html
